@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Users</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <style>
+        .container{
+            position: relative; 
+            margin: 10px auto;
+            padding: 20px; 
+            max-width: 800px;
+            background-color: black;
+        }
+        .content{
+            margin-bottom: 20px;
+            color: white;
+        }
+        .btn{
+            margin-left: 80%;
+            padding: 15px;
+            width: 20%;
+        }
+        .card-container {
+            background-color: #f8f9fa;
+            width: 50%;
+            padding: 20px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <h2>Get User Task</h2>
+        </div>
+        
+        <button type="button" class="btn btn-primary" id="get_users">Get Users</button>
+    </div>
+    <div class="card-container">
+        <div id="userCards" class="row mt-4"></div>
+    </div>
+    <script src="app.js" charset="utf-8"></script>
+</body>
+</html>
